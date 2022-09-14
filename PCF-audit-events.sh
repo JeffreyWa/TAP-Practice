@@ -76,7 +76,7 @@ function search_n_replace(){
         #echo $key
         #echo ${spaceMap[$key]}
         ##$sed -i 's@'"$kye"'@'"${spaceMap[$key]}"'@g' event.csv 
-        sed -i '' "s/$key/${spaceMap[$key]}/g" event.csv 
+        sed -i "s/$key/${spaceMap[$key]}/g" event.csv 
     done
 }
 
