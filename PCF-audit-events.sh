@@ -1,9 +1,9 @@
-#!/usr/local/bin/bash
+#!/bin/sh
 
 declare -A orgMap
 declare -A spaceMap
 
-PER_PAGE=20
+PER_PAGE=500
 
 
 function init_org(){
@@ -85,5 +85,5 @@ today=$(date -u +"%Y-%m-%dT00:00:00Z")
 init_org
 init_space
 init_csv
-get_events "2022-08-12T16:41:00Z"
+get_events $today
 search_n_replace  
